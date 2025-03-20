@@ -55,7 +55,7 @@ class API_Star_Wars(API_consumer):
            return (data.get('name'), data.get('films'))
        except requests.exceptions.RequestException as e:
            print(f'Erro ao acessar API Star Wars: {e}')
-           return None
+           return None // aqui fazemos o consumo de api de star wars
 
 class API_Ice_and_Fire(API_consumer):
    def __init__(self):
