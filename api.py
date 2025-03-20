@@ -38,7 +38,7 @@ class API_Rick_Morty(API_consumer):
            return (data.get('id'), data.get('name'), data.get('species'))
        except requests.exceptions.RequestException as e:
            print(f'Erro ao acessar API Rick and Morty: {e}')
-           return None
+           return None  // aqui fazemos o consumo de api rick and morty
 
 class API_Star_Wars(API_consumer):
    def __init__(self):
