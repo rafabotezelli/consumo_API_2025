@@ -21,7 +21,7 @@ class API_Pokemon(API_consumer):
            return (data.get('id'), data.get('name'))
        except requests.exceptions.RequestException as e:
            print(f'Erro ao acessar API Pokemon: {e}')
-           return None
+           return None //aqui fazemos o consumo de api pokemon
 
 class API_Rick_Morty(API_consumer):
    def __init__(self):
