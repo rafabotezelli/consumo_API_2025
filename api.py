@@ -72,4 +72,4 @@ class API_Ice_and_Fire(API_consumer):
            return (data.get('name'), data.get('tvSeries'))
        except requests.exceptions.RequestException as e:
            print(f'Erro ao acessar API Crônicas de Gelo e Fogo: {e}')
-           return None
+           return None  //aqui fazemos o consumo de api de ice and fire, game of thrones
